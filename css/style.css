@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* HEADER SECTION */
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(48, 104, 224);
+    display: flex;
+    justify-content: space-between;
+    color: white;
+
+
+}
+
+.logo-container {
+    width: 10%;
+    height: 100%;
+    border: 1px solid grey;
+    margin-left: 30px;
+}
+
+.nav-container {
+    width: 10%;
+    height: 100%;
+    border: 1px solid grey;
+    margin-right: 30px;
+}
+
+/* ---------------------------------------- */
+/* MAIN SECTION */
+
+/* Services Section */
+.cetnered-container {
+    max-width: 90vw;
+    margin: 0 auto;
+
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding: 40px 0 60px 0;
+}
+
+
+.services .col {
+    background-color: skyblue;
+    border-radius: 5%;
+    width: 100%;
+}
+
+.demo {
+
+    min-height: 70vh;
+
+}
+
+.clean-code,
+.web-design,
+.developement,
+.branding {
+
+    height: 50vh;
+
+}
+
+/* Planning Section */
+.planning {
+    min-height: 100vh;
+    background-color: rgb(140, 133, 204);
+    padding: 10px 0 60px 0;
+}
+
+.app-dev {
+    min-height: 70vh;
+    background-color: white;
+    border-radius: 10%;
+}
+
+/* Testimonial Section */
+
+.testimonial {
+    padding: 60px 0;
+}
+
+.testimonies {
+    background-color: rgb(140, 133, 204);
+    min-height: 50vh;
+    border-radius: 10%;
+    margin: 20px auto;
+
+}
+
+/* Benefits Section */
+.benefits {
+    min-height: 80vh;
+    background-color: rgb(140, 133, 204);
+    padding: 60px 0;
+}
+
+.benefits .columns {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.benefits h4 {
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.columns .col {
+
+    min-height: 60vh;
+    background-color: white;
+    border-radius: 5%;
+
+}
+
+
+/* About us Section  */
+.about-us {
+    padding: 60px 0;
+}
+
+/*Pricing Section*/
+.pricing {
+    padding: 60px 0;
+    background-color: rgb(140, 133, 204);
+}
+
+.get-started {
+    text-align: center;
+
+}
+
+/* ---------------------------------------- */
+/* FOOTER SECTION */
+footer {
+    background-color: rgb(37, 37, 37);
+    padding: 60px 0;
+}
+
+.footer {
+    text-align: center;
+    color: white;
+
+}
+
+.footer a:visited {
+    color: rgb(140, 133, 204);
+
+}
+
+
+
+
+
+/* ---------------------------------------- */
+/* MEDIA QUERIES */
+
+/* Main Section Media */
+/* Services Media */
+
+@media screen and (min-width: 480px) {
+
+    .services {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .demo.col {
+
+        width: calc(67% - 1rem);
+    }
+
+    .clean-code.col {
+        width: calc(33% - 1rem);
+        height: 70vh;
+    }
+
+    .web-design.col,
+    .developement.col,
+    .branding.col {
+
+        width: calc(32.6% - 1rem);
+    }
+
+
+    /* Planning Media */
+
+
+    .app-dev {
+        border-radius: 20px;
+    }
+
+
+
+    /* Testimonial Media */
+
+    .testimonies {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+
+    }
+
+
+    /* Benefits Media */
+
+
+    .benefits .columns {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+
+    }
+
+
+    .columns .col {
+
+        width: calc(48%);
+
+    }
+
+
+    /* About us Media  */
+
+    .about-us {
+        display: flex;
+
+    }
+
+
+}
+
+/* ---------------------------------------- */
