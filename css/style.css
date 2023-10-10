@@ -46,6 +46,11 @@ header {
 /* MAIN SECTION */
 
 /* Services Section */
+p {
+    line-height: 30px;
+    font-size: 14px;
+}
+
 .cetnered-container {
     width: 85vw;
     margin: 0 auto;
@@ -56,7 +61,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 2rem;
+    gap: 24px;
     padding: 40px 0 60px 0;
 }
 
@@ -69,15 +74,17 @@ header {
 
 .demo {
 
-    height: 80vh;
-    width: 100%;
+    height: 85vh;
+    position: relative;
+
 
 }
 
 .demo h3 {
     color: #3784f7;
     text-align: center;
-    padding: 30px;
+    padding-top: 30px;
+    padding-bottom: 15px;
 }
 
 .demo p {
@@ -87,24 +94,30 @@ header {
 .btn-appStore {
     background-color: #3784f7;
     color: white;
-    width: 180px;
-    height: 35px;
+    width: 230px;
+    height: 45px;
     text-align: center;
     border-radius: 25px;
-    padding: 7px;
-    margin: 30px auto;
+    padding: 15px;
+    margin: 15px auto;
 
 }
 
-.btn-appStore span {
-    padding-left: 5px;
+.btn-appStore a {
+    padding-left: 7px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 3px;
+    font-weight: 550;
 }
 
 
 .demo img {
-    width: 221px;
-    margin: 0 auto;
-    display: block;
+    width: 310px;
+    position: absolute;
+    bottom: 0px;
+    left: 22px;
+
 
 }
 
@@ -215,13 +228,13 @@ header {
 }
 
 .image-container {
-    padding: 25px 0 0 0;
+    padding: 25px 0 10px 0;
 }
 
 .round-image {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
 }
 
@@ -229,9 +242,15 @@ header {
     padding: 10px 15px;
 }
 
+.testimonies .name {
+    padding-bottom: 25px;
+}
+
+
+
 /* Benefits Section */
 .benefits {
-    min-height: 80vh;
+
     background-color: #9792e4;
     padding: 60px 0;
 }
@@ -243,9 +262,11 @@ header {
 
 }
 
-.benefits h4 {
+.benefits>h1 {
     padding-bottom: 50px;
     text-align: center;
+    color: white;
+
 }
 
 .columns .col {
@@ -285,6 +306,57 @@ header {
     padding: 60px 0;
 }
 
+.about-us h1 {
+    color: #9792e4;
+    padding-bottom: 25px;
+}
+
+.about-us h6 {
+    color: #9792e4;
+    font-size: 25px;
+    padding: 20px 0;
+}
+
+.about-us img {
+    border-radius: 50%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.about-us .image {
+    position: relative;
+    padding-top: 25px;
+}
+
+.qoute-position {
+    position: absolute;
+    top: 15px;
+    left: 110px;
+    font-size: 35px;
+    color: #9792e4;
+}
+
+.about-us a {
+    background-color: #9792e4;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    display: inline-block;
+    width: 170px;
+    padding: 8px 16px;
+    font-size: 14px;
+
+}
+
+.about-us a span {
+    padding-left: 4px;
+}
+
+
+
+
+
+
 /*Pricing Section*/
 .pricing {
     padding: 60px 0;
@@ -293,8 +365,43 @@ header {
 
 .get-started {
     text-align: center;
+    color: white;
 
 }
+
+.get-started h1 {
+    font-size: 25px;
+    padding: 25px 0;
+}
+
+.get-started h2 {
+    color: orange;
+    font-size: 40px;
+}
+
+.get-started p {
+    padding: 25px 0;
+}
+
+.get-started a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: white;
+    color: #9792e4;
+    padding: 17px;
+    border-radius: 25px;
+    width: 220px;
+    height: 50px;
+    font-weight: 550;
+    letter-spacing: 1px;
+
+}
+
+.get-started ul {
+    display: inline;
+}
+
+
 
 /* ---------------------------------------- */
 /* FOOTER SECTION */
@@ -309,7 +416,7 @@ footer {
 
 }
 
-.footer a:visited {
+.footer a {
     color: #9792e4;
 
 }
@@ -334,11 +441,21 @@ footer {
     .demo.col {
 
         width: calc(67% - 1rem);
+        height: 75vh;
+    }
+
+    .demo img {
+        width: 280px;
+        position: absolute;
+        bottom: 0px;
+        left: 78px;
+
+
     }
 
     .clean-code.col {
         width: calc(33% - 1rem);
-        height: 80vh;
+        height: 75vh;
     }
 
     .web-design.col,
@@ -368,6 +485,10 @@ footer {
 
     }
 
+    .image-container {
+        padding: 25px 25px;
+    }
+
 
     /* Benefits Media */
 
@@ -394,6 +515,10 @@ footer {
 
     }
 
+    .about-us .text{
+        padding-right: 70px;
+    }
+
 
 }
 
@@ -404,7 +529,7 @@ footer {
 @media screen and (min-width: 992px) {
 
     .cetnered-container {
-        width: 75vw;
+        width: 70vw;
     }
 
     .logo-container {
@@ -453,12 +578,17 @@ footer {
 
     }
 
+    .demo h3{
+        text-align: left;
+        padding-left: 15px;
+    }
+
 
     .demo img {
         width: 250px;
-        margin: 53px 20px;
-        display: inline-block;
-
+        position: relative;
+        bottom: -91px;
+        left: -22px;
 
     }
 
@@ -466,22 +596,28 @@ footer {
 
     .demo.col {
 
-        width: calc(67% - 1rem);
-        height: 50vh;
+        width: calc(67% - 12px);
+        height: 45vh;
+        border-radius: 15px;
+    }
+
+    .btn-appStore {
+        margin: 15px 15px;
     }
 
 
 
     .clean-code.col {
-        width: calc(33% - 1rem);
-        height: 50vh;
+        width: calc(33% - 12px);
+        height: 45vh;
     }
 
     .web-design.col,
     .developement.col,
     .branding.col {
 
-        width: calc(32.5% - 1rem);
+        width: calc(31.5% - 4px);
+        height: 45vh;
     }
 
 
@@ -497,6 +633,7 @@ footer {
 
     .planning-flexed {
         display: flex;
+        align-items: baseline;
 
     }
 
@@ -513,7 +650,7 @@ footer {
     }
 
 
-    .testimonial p {
+    .testimonies p {
         padding: 10px 0;
         text-align: left;
     }
