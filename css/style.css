@@ -34,11 +34,11 @@ header {
     margin-right: 30px;
 }
 
-.nav-container a{
+.nav-container a {
     display: none;
 }
 
-.nav-container .big{
+.nav-container .big {
     display: none;
 }
 
@@ -47,7 +47,7 @@ header {
 
 /* Services Section */
 .cetnered-container {
-    width: 90vw;
+    width: 85vw;
     margin: 0 auto;
 
 }
@@ -69,12 +69,22 @@ header {
 
 .demo {
 
-    height: 70vh;
+    height: 80vh;
     width: 100%;
 
 }
 
-.btn-appStore{
+.demo h3 {
+    color: #3784f7;
+    text-align: center;
+    padding: 30px;
+}
+
+.demo p {
+    padding: 0 15px;
+}
+
+.btn-appStore {
     background-color: #3784f7;
     color: white;
     width: 180px;
@@ -83,21 +93,19 @@ header {
     border-radius: 25px;
     padding: 7px;
     margin: 30px auto;
-    
-    
 
 }
 
-.btn-appStore span{
+.btn-appStore span {
     padding-left: 5px;
 }
 
 
-.demo img{
-    width: 250px;
+.demo img {
+    width: 221px;
     margin: 0 auto;
-    display: block
-    
+    display: block;
+
 }
 
 .clean-code,
@@ -107,34 +115,118 @@ header {
 
     height: 50vh;
     width: 100%;
+    text-align: center;
 
 }
 
+
+.card-icon {
+    color: #3784f7;
+    font-size: 80px;
+    padding: 30px 0;
+
+}
+
+.col h3 {
+    color: #3784f7;
+    font-size: 20px;
+}
+
+.col p {
+    padding: 25px 15px;
+}
+
+
+
 /* Planning Section */
 .planning {
-    min-height: 100vh;
+    min-height: 80vh;
     background-color: #9792e4;
     padding: 10px 0 60px 0;
 }
 
+.strategic-plan {
+    color: white;
+}
+
+.strategic-plan img {
+    width: 80%;
+    margin: 20px;
+}
+
+.strategic-plan p {
+    padding: 30px 0;
+}
+
 .app-dev {
-    min-height: 70vh;
+
     background-color: white;
     border-radius: 10%;
+    text-align: center;
+
+}
+
+.app-dev img {
+    width: 65%;
+    margin: 0 auto;
+    display: block;
+    padding: 25px 0;
+}
+
+
+.app-dev p {
+    padding: 25px 15px;
+}
+
+.app-dev .fa-arrow-down {
+    background-color: #9792e4;
+    border-radius: 50%;
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 30px;
 }
 
 /* Testimonial Section */
 
 .testimonial {
-    padding: 60px 0;
+    padding: 50px 0;
+    text-align: center;
+
+}
+
+.testimonial h3 {
+    color: #9792e4;
+    font-size: 25px;
+}
+
+.testimonial p {
+    padding: 30px 0;
 }
 
 .testimonies {
     background-color: #9792e4;
-    min-height: 50vh;
     border-radius: 10%;
     margin: 20px auto;
+    color: white;
 
+}
+
+.image-container {
+    padding: 25px 0 0 0;
+}
+
+.round-image {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.testimonies p {
+    padding: 10px 15px;
 }
 
 /* Benefits Section */
@@ -158,10 +250,33 @@ header {
 
 .columns .col {
 
-    min-height: 60vh;
     background-color: white;
     border-radius: 5%;
 
+}
+
+
+.columns .col h1,
+.columns .col h2 {
+    padding: 10px 15px;
+    color: #9792e4;
+}
+
+
+.columns .col a {
+    background-color: #9792e4;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 25px;
+    width: 100px;
+    display: inline-block;
+    margin-bottom: 25px;
+    margin-left: 15px;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: 550;
+    letter-spacing: 1px;
 }
 
 
@@ -204,6 +319,8 @@ footer {
 /* ---------------------------------------- */
 /* MEDIA QUERIES */
 
+/* TABLET */
+
 /* Main Section Media */
 /* Services Media */
 
@@ -221,7 +338,7 @@ footer {
 
     .clean-code.col {
         width: calc(33% - 1rem);
-        height: 70vh;
+        height: 80vh;
     }
 
     .web-design.col,
@@ -284,9 +401,13 @@ footer {
 
 /* DESKTOP MEDIA */
 /* Header Media */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
 
-    .logo-container{
+    .cetnered-container {
+        width: 75vw;
+    }
+
+    .logo-container {
         margin-left: 55px;
     }
 
@@ -296,20 +417,20 @@ footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        
+
     }
 
-    .nav-container a{
+    .nav-container a {
         display: inline-block;
         text-decoration: none;
         color: white;
     }
 
-    .nav-container .small{
+    .nav-container .small {
         display: none;
     }
 
-    .nav-container .big{
+    .nav-container .big {
         display: inline-block;
         background-color: white;
         color: black;
@@ -318,7 +439,7 @@ footer {
     }
 
 
-/* Services Media */
+    /* Services Media */
 
 
     .services {
@@ -326,11 +447,30 @@ footer {
         flex-wrap: wrap;
     }
 
+    .demo {
+
+        display: flex;
+
+    }
+
+
+    .demo img {
+        width: 250px;
+        margin: 53px 20px;
+        display: inline-block;
+
+
+    }
+
+
+
     .demo.col {
 
         width: calc(67% - 1rem);
         height: 50vh;
     }
+
+
 
     .clean-code.col {
         width: calc(33% - 1rem);
@@ -348,8 +488,16 @@ footer {
     /* Planning Media */
 
 
+
     .app-dev {
         border-radius: 20px;
+        max-height: 70vh;
+    }
+
+
+    .planning-flexed {
+        display: flex;
+
     }
 
 
@@ -363,6 +511,18 @@ footer {
         border-radius: 20px;
 
     }
+
+
+    .testimonial p {
+        padding: 10px 0;
+        text-align: left;
+    }
+
+
+    .image-container {
+        padding: 25px 25px;
+    }
+
 
 
     /* Benefits Media */
